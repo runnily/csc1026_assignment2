@@ -1,0 +1,226 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <link rel="stylesheet" type="text/css" href="css/webcate.css">
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+
+</head>
+
+<body>
+
+  <div id="contents">
+    <!-- Contains the contents of the page-->
+    <nav>
+      <ul>
+        <!-- A list to define the menu/navigation of the page-->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="html_quiz.html">Quiz</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="#">Courses</a>
+          <ul>
+            <li><a href="history.html">History</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="script.html">Java Script</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Chapters</a>
+          <ul class="dropdwn">
+            <li><a href="#ChapterI">Chapter I</a></li>
+            <li><a href="#ChapterII">Chapter II</a></li>
+            <li><a href="#ChapterIII">Chapter III</a></li>
+            <li><a href="#ChapterIV">Chapter IV</a></li>
+            <li><a href="#ChapterV">Chapter V</a></li>
+          </ul>
+        </li>
+        <li>
+          <form class="search" onsubmit="searching()" action="javascript:; ">
+            <!-- A search button incase user wants to search for something -->
+            <input type="text" id="searchGo" placeholder="Enter A keyword" name="search">
+            <button type="submit"><i class="submitSearch"></i></button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <!-- A div tag containing the logo image and the title of the homepage -->
+      <img class="logo imgLogo" src="img/logo.jpg" alt="logo " />
+      <h1 id="titleLogo" class="logo">WEB<span id="yellowLogo">CATE </span></h1>
+    </div>
+
+    <div id="page">
+      <!-- This div tag contains heading one of the homepage -->
+      <h1> HTML </h1> <!-- This heading provides the information of the purpose of the content-->
+    </div>
+
+
+    <div>
+      <div>
+        <div id="ChapterI"> </div> <!-- this would define the first chapter of the content.-->
+        <div>
+          <h2> HTML: Indroduction </h2> <!-- Explains the purpose of the section -->
+
+          <p id="1" class="pSearch"> HTML was made with the idea to simply design a handle text-based document. As the popularity of the web increased, there was a need for new features to be added. This meant improving organisation and
+            presentation. In the late 80’s
+            Berners-Lee proposed the concept of an internet-based hypertext system. Lee specified HTML and wrote the browser in the late 1990. HTML2.0 was published in 1995. Future web enhancement meant HTML3.2 was later introduced and became
+            standardised common hypertext language for structuring web pages. Towards the late 90’s another version of HTML was introduced- HTML4.01. This added more enhancements for the new technologies. This included: support for CSS, Scripting
+            and accessibly features. The problem with this HTML is that it was only targeted at browsers which were on PCs and work stations. This meant the syntax used to write the HTML was quite lenient (errors and variations in the HTML mark-up,
+            elements without tags etc). This meant that browser had much more processing to do, as the mark-up language contained many variations. XHTML 1.0 was published around 2000 to overcome this. This language was a mixture of XML (Extensible
+            Mark-up Language- This is a set of rules that defines encoding of documents). XHTML had the same syntax as HTML, however with the XML it provided a stricter syntax. This meant tags, attributes were lowercase, Attributes must have a name
+            value pairs, Tags must open, and close, self-contained tags must be closed etc. With XHTML meant more device accessibility and browser used less processing power to deal with the syntax. This also pushed forward the idea of enforced
+            separation. HTML 5 was later introduced. This improved semantic organisations, device independence and removed the need for browser plugins</p>
+        </div>
+      </div>
+      <div id="board1">
+        <!-- content and board -->
+
+        <iframe id="board1img" src="https://www.youtube.com/embed/mzPxo7Y6JyA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <div id="ChapterII"> </div> <!-- This div define the second chapter -->
+        <h2> HTML: DTD </h2> <!-- Provides information of what the chapter is about -->
+        <p id="2" class="pSearch"> The specification for an HTML document is provided by the World Wide Web Consortium (W3C). W3C defines the document type definition (DTD) for each version of HTML. A DTD defines the rules of each version of the
+          HTML (XHTML,
+          HTML4.01, HTML5). It defines: The tags which can be used within the document, where they are supposed to appear in the document, which attributes they can hold. <a href="https://hackr.io/blog/difference-between-html-html5-xhtml">This
+            website provides good examples of the differences between the version of HTML</a>. The basic document html structure is specified by W3C “1. a line containing HTML version information,
+          2. a declarative header section (delimited by the HEAD element),
+          3. a body, which contains the document's actual content. The body may be implemented by the BODY element or the FRAMESET element.” The section 2 and 3 are within the html
+          tag. Below is an example
+          <span>
+            &lt;html>
+            &lt;head>&lt;title>My first HTML document&lt;/title>&lt;/head>
+            &lt;body>&lt;p>&lt;Hello World!&lt;/p>&lt;/body>
+            &lt;/html>
+          </span>
+          The main purpose of the DTD is to define the document version which the user is using.
+          Below is an example of a doctype for XHTML1.0
+          <span>
+            &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+          </span>
+          For HTML4.02:
+          <span>
+            &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+          </span>
+          For HTML5 its simply just: <span>
+            &lt;!DOCTYPE html>
+          </span>
+
+          As mention before the document contains the a head, which is for information about the page and not for display:
+          <span>
+            &lt;head>
+            &lt;title>Title of the document&lt;/title>
+            &lt;/head>
+          </span>
+          Here you could specify optional declarations using the
+          &lt;meta> tag and &lt;script> &lt;/script> to define a script or &lt;style>&lt;/style> to define the CSS. We’ve recently touched on the importance of concerns of separation so it would be better if we used
+          &lt;link>
+          &lt;/link> tag to link script or CSS file.
+          Body Tag is used for content display, An example is shown below:
+          <span>
+            &lt;body>
+            The content of the document......
+            &lt;/body>
+          </span>
+          Overall the using an example of HTML5 the HTML document should appear like this :
+          <span>
+            &lt;!DOCTYPE html>
+            &lt;html>
+            &lt;head>
+            &lt;title>Title of the document&lt;/title>
+            &lt;/head>
+            &lt;body>
+            &lt;p>Content here&lt;/p>
+            &lt;/body>
+            &lt;/html>
+          </span>
+        </p>
+      </div> <!-- defines the board of the page -->
+      <div id="board2">
+        <!-- This div tag defines a board to contain a media -->
+        <img id="board2img" src="img/dtd.jpg" alt="internet vs web" title="internet vs web" />
+      </div>
+    </div>
+    <div class="break">
+      <div id="board3">
+        <div id="ChapterIII">
+          <!-- This div tag contains the contents of the third chapter -->
+          <h2> Types of Tags and Attributes </h2> <!-- Provides title for the purpose of chaper -->
+          <p id="3" class="pSearch"> In the other section we came across the &lt;head>, &lt;html>, &lt;body> and &lt;html>. These are known as tags which are wrapped around content in pairs such as this &lt;h1> This is a heading &lt;/h1>.The tags
+            can be categorised
+            into
+            types of Tags. The block-level tag. This tag provides basic content structure for the webpage and defines blocks of content. Heading &lt;h1> &lt;/h1> and paragraphs &lt;p>&lt;/p> are examples of block level tags. The browser will treat
+            these tags as the name suggest -a block. These adds new lines above and below. Inline tags are tags which can be nested within a block. These tags do not create a new line &lt;p> The &lt;em> usefull &lt;/em> bit of the paragraph. There
+            are
+            some tags which pairs are not &lt;br />. Tags contain attributes within them. Attributes specify additional properies for the HTML tags. For example &lt;img src = “logo.gif” alt = “my logo”> is an example of a tag. The common attributes
+            includes:
+            Class, this attributes associates element with a CSS class
+            Id, this will uniquely identify elements for CSS or scripting
+            Style will specify the style of the tag with the CSS.
+          </p>
+        </div>
+        <div id="laptop2">
+          <img id="board3img" src="img/laptop.png" alt="laptop" />
+        </div>
+        <div id="ChapterIV">
+          <!-- This div tag contains the content of the fourth chaper -->
+          <h2> Standards and Validation </h2>
+          <p id="4" class="pSearch"> Web standards are defined as “technologies used for creating and interpreting web-based content [design and develop to] ensure long-term viability of web publishing”. This empathise the fact that you should use
+            web standards, to allow your website to have a long-term viability. Standards are extremely important within the industry because they allow the combination of products from different manufacturers to create a customized system. HTML is
+            derived from
+            Standard Generalized Mark-up Language (SGML). This is a standard for specifying a document mark-up language or tag set. It’s important to understand the SGML is not a language itself, but a formal description of the language. Mark-up
+            languages should contain a DTD declaration. All versions of HTML have at least two DTDs associated with it, these includes, Strict DTD, This contains only current and valid tags and attributes. Traditional DTD retains deprecated
+            definitions for older mark-up tags. To provide backwards combability.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="endSection">
+      <!-- This contains defines the end section of the webpage, acts at a footer -->
+      <div class="endSection"> </div>
+      <div class="courses">
+        <p class="courses" id="heading"> Courses :</p>
+        <p class="courses"><a href="history.html">History</a></p>
+        <p class="courses"><a href="html.html">HTML</a></p>
+        <p class="courses"><a href="css.html">CSS</a></p>
+        <p class="courses"><a href="script.html">Script</a></p>
+      </div>
+      <div id="endAbout"><a href="about.html">About us</a></div>
+      <div class="endSearch">
+        <img class="logo imgLogo" src="img/logo.jpg" alt="logo " />
+      </div>
+    </div>
+
+    <div id="resultsBorder">
+      <!-- this div tag contains the results from the search the user used.-->
+      <div id="results">
+        <h2> Results </h2>
+      </div>
+      <button id="cancel">Cancel</button> <!--  A button to cancel the button-->
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="js/search.js"></script>
+  <!--A script linking to the search -->
+</body>
+
+</html>

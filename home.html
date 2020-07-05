@@ -1,0 +1,183 @@
+<!doctype html>
+<!-- The doctype simply to tell the praser what type of docuement were looking at. In this case were using html5 -->
+
+<html lang="en">
+<!-- html element includes an attribute called lang to specify the type -->
+
+<head>
+  <meta charset="utf-8"> <!-- defines character encoding of the docuement -->
+  <link rel="stylesheet" type="text/css" href="css/theme.css"> <!-- link to theme of whole website-->
+  <link rel="stylesheet" type="text/css" href="css/home.css"> <!-- link to css for the home page -->
+  <link rel="stylesheet" type="text/css" href="css/footer.css"> <!-- link to a css designed for the footer -->
+  <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'> <!-- google style sheets -->
+  <title>Home </title> <!-- This is the title of the page -->
+</head>
+
+<body>
+  <div id="contents"> <!-- All the information on the homepage are contained within this div tag contents-->
+    <nav>
+      <ul> <!-- A listed created designed for the menu -->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="#">Courses</a>
+          <ul>
+            <li><a href="history.html">History</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="script.html">Java Script</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div> <!-- this div tag contains the logo for website and name -->
+      <img  class="logo imgLogo" src="img/logo.jpg" alt="logo " />
+      <h1 id="titleLogo" class="logo">WEB<span id="yellowLogo">CATE </span></h1> <!-- A span tag as these would have different color -->
+    </div>
+
+    <div class="firstSection" id="firstSection"> <!-- This would be the first section of the home page, explaining what the webpage is about-->
+      <h1 class="firstSection">CSC1026 website design and construction </h1> <!-- h1 tag here illustrating purpose of webpage -->
+      <p class="firstSection"> This website aims to aid you with learning the 1026 module.
+        This includes content on the website design and construction. </p> <!-- This is explains what the website is about -->
+      <img class="firstSection" src="img/laptop.png" alt="laptop"> <!-- this would also hold a laptop image -->
+    </div>
+
+
+    <div class="secondSection" id="secondSection"> <!-- The second section to tell the user the overall guide of the webpag -->
+      <div class="secondSection"> <!-- The second section would explain the guide of the webpage -->
+        <p class="secondSection"> Select a topic you want to learn! </p>
+        <img class="secondSection" src="https://www.onlygfx.com/wp-content/uploads/2016/12/arrow-drawing-3.png" alt="arrow">
+      </div>
+
+      <div class="secondSection">
+        <p class="secondSection"> Do a quick quiz </p>
+        <img class="secondSection" src="https://www.onlygfx.com/wp-content/uploads/2016/12/arrow-drawing-3.png" alt="arrow">
+      </div>
+
+      <div class="secondSection">
+        <p class="secondSection"> Get feedback then move on to the next topic</p>
+      </div>
+    </div>
+
+    <div class="thirdSection" id="thirdSection"> <!-- Third section would explain give a breif of what the history page has to offer -->
+      <h2 class="thirdSection"> History </h2>
+      <img class="thirdSection" src="img/history.png" alt="history">
+      <p class="thirdSection"> An introduction to help formularizes you with the basics about the internet. Here we cover through general knowlege about the internet, and mostly importantly cover the history of the internet.</p>
+      <button type="button" class="thirdSection" onclick="location.href = 'history.html';">Get started now!</button>
+    </div>
+
+    <div class="fourthSection" id="fourthSection"> <!-- Fourth section would give a breif on what the html page has to offer -->
+      <h2 class="fourthSection"> HTML </h2>
+      <img class="fourthSection" src="img/html.png" alt="html">
+      <p class="fourthSection"> We already know about the internet. Great! Now this is where things become a bit technical as we not only explore the history of html but the language, provided with an examples.</p>
+      <button type="button" class="fourthSection" onclick="location.href = 'html.html';">Learn about HTML!</button>
+    </div>
+
+    <div class="fifthSection" id="fifthSection"> <!-- Fifth section would provide a breif of what the css page has to offer  -->
+      <h2 class="fifthSection"> CSS </h2>
+      <img class="fifthSection" src="img/css.png" alt="css">
+      <p class="fifthSection"> Once you’ve covered the basics along with HTML, we move on to CSS. CSS focuses more on the design of the webpage. Here we take a deeper look into the presentation of a website.</p>
+      <button type="button" class="fifthSection" onclick="location.href = 'css.html';">Learn about CSS!</button>
+    </div>
+
+    <div class="sixthSection" id="sixthSection"> <!--  Sixth section is giving a breif of what the java script has to offer-->
+      <h2 class="sixthSection"> Java Script </h2>
+      <img class="sixthSection" src="img/script.png" alt="javascript">
+      <p class="sixthSection"> Finally, the last bit we need to cover is java script. The content, design has now been covered. However, our webpage is not complete without some behaviour! Here we focus on how to achieve interaction using java script.</p>
+      <button type="button" class="sixthSection" onclick="location.href = 'script.html';">Learn about Java script!</button>
+    </div>
+
+    <div class="slideshow"> <!-- This div tag contains the slide show animation displayed at the buttom of the homepage-->
+
+      <div class="fade slides">
+        <p class="num">1 / 9</p>
+        <img class="slideImg" src="img/1.jpg" alt="1">
+        <p class="caption">You can study any where!</p>
+      </div>
+
+      <div class="fade slides">
+        <p class="num">2 / 9</p>
+        <img class="slideImg" src="img/2.jpg" alt="2">
+        <p class="caption">in the comfort of your home!</p>
+      </div>
+
+      <div class="fade slides">
+        <p class="num">3 / 9</p>
+        <img class="slideImg" src="img/4.jpg" alt="4">
+        <p class="caption">even loughing on the sofa!</p>
+      </div>
+
+      <div class="fade slides">
+        <p class="num">4 / 9</p>
+        <img class="slideImg" src="img/5.jpg" alt="5">
+        <p class="caption">study on your ipad!</p>
+      </div>
+
+      <div class="fade slides">
+        <p class="num">5 / 9</p>
+        <img class="slideImg" src="img/6.jpg" alt="6">
+        <p class="caption">or while eating breakfast</p>
+      </div>
+
+      <div class="fade slides">
+        <p class="num">6 / 9</p>
+        <img class="slideImg" src="img/7.jpg" alt="7">
+        <p class="caption">perhaps on a lazy sunday</p>
+      </div>
+
+      <div class="fade slides">
+        <p class="num">7 / 9</p>
+        <img class="slideImg" src="img/8.jpg" alt="8">
+        <p class="caption">or while taking a snack</p>
+      </div>
+
+      <div class="fade slides">
+        <p class="num">8 / 9</p>
+        <img class="slideImg" src="img/9.jpg" alt="9">
+        <p class="caption">...while having a pinic</p>
+      </div>
+
+      <div class="fade slides">
+        <p class="num">9 / 9</p>
+        <img class="slideImg" src="img/10.jpg" alt="10">
+        <p class="caption">or having a coffee break!</p>
+      </div>
+
+      <br>
+
+      <div> <!-- this is circles for the webpage -->
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+    </div>
+
+    <div id="endSection"> <!--  This is the end section of the webpage which is just a footer for the webpage -->
+      <div class="endSection"> </div>
+      <div class="courses">
+        <p class= "courses" id = "heading"> Courses :</p>
+        <p class="courses"><a href="history.html">History</a></p>
+        <p class="courses"><a href="html.html">HTML</a></p>
+        <p class="courses"><a href="css.html">CSS</a></p>
+        <p class="courses"><a href="script.html">Script</a></p>
+      </div>
+      <div id="endAbout"><a href="about.html">About us</a></div>
+      <div class="endSearch">
+        <img class="logo imgLogo" src="img/logo.jpg" alt="logo " />
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/home.js"></script> <!-- A script for the home page -->
+</body>
+
+</html>

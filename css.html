@@ -1,0 +1,291 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS</title>
+  <link rel="stylesheet" type="text/css" href="css/webcate.css">
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+
+</head>
+
+<body>
+
+  <div id="contents">
+    <!-- Contains the contents of the page-->
+    <nav>
+      <ul>
+        <!-- A list to define the menu/navigation of the page-->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="html_quiz.html">Quiz</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="#">Courses</a>
+          <ul>
+            <li><a href="history.html">History</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="script.html">Java Script</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Chapters</a>
+          <ul class="dropdwn">
+            <li><a href="#ChapterI">Chapter I</a></li>
+            <li><a href="#ChapterII">Chapter II</a></li>
+            <li><a href="#ChapterIII">Chapter III</a></li>
+            <li><a href="#ChapterIV">Chapter IV</a></li>
+            <li><a href="#ChapterV">Chapter V</a></li>
+          </ul>
+        </li>
+        <li>
+          <form class="search" onsubmit="searching()" action="javascript:; ">
+            <!-- A search button incase user wants to search for something -->
+            <input type="text" id="searchGo" placeholder="Enter A keyword" name="search">
+            <button type="submit"><i class="submitSearch"></i></button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <!-- A div tag containing the logo image and the title of the homepage -->
+      <img class="logo imgLogo" src="img/logo.jpg" alt="logo " />
+      <h1 id="titleLogo" class="logo">WEB<span id="yellowLogo">CATE </span></h1>
+    </div>
+
+    <div id="page">
+      <!-- This div tag contains heading one of the homepage -->
+      <h1> CSS </h1> <!-- This heading provides the information of the purpose of the content-->
+    </div>
+
+
+    <div>
+      <div>
+        <div id="ChapterI"> </div> <!-- this would define the first chapter of the content.-->
+        <div>
+          <h2> CSS: Style </h2> <!-- Explains the purpose of the section -->
+          <p id="1" class="pSearch"> Now you’ve covered html, we move on to CSS. The first idea of CSS came from Hakon Wium Lie while working CERN. For now, without CSS our webpages is looking boring. We need some additional organization and aesthetic
+            to enhance the
+            users experience. We can achieve this using CSS. Before we rush into anything its important to understand the balance of information and style. For example, if we use no style this would not influence users to go on our site. However, if
+            over styled our website it would draw our user away. The style you use also depends on the purpose of the website; A website for art purposes would provide more style. <br> Cascaded Style sheets specify formatting rules. These rules consist
+            of selectors and declarations of proprieties. For example, below is a HTML code for a paragraph
+            <span>
+              &lt;p>
+              This is a paragraph should have white text
+              &lt;/p>
+            </span>
+            If we then want to specify the style of the paragraph, we would do this using CSS. Using the selector P, and declarations to define its properties. Below is a simple example of using CSS to apply a style to the element p
+            <span>
+              {background-color: blue;
+              color: white;}
+            </span>
+            This basic idea of CSS is specifying how the elements looks by using selectors and declarations.
+          </p>
+        </div>
+      </div>
+      <div id="board1">
+        <!-- content and board -->
+        <iframe id="board1img" src="https://www.youtube.com/embed/6d_4sd_l7rQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <div id="ChapterII"> </div> <!-- This div define the second chapter -->
+        <h2> CSS: More on Style </h2> <!-- Provides information of what the chapter is about -->
+        <p id="2" class="pSearch">
+          Multiple selectors can be used with comma to seperate indivdual tags. Below shows an example
+          <span>
+            h1, h2, h3, h4 {
+            background-color: white;
+            color: blue;
+            font-style: italic;
+            }
+          </span>
+          Going back to the html document, we want a way to link the html to the CSS. There are many ways in which you could do this. One way you could do is to add the CSS within the HTML. This is known as an internal style sheet. Here we set out
+          the style of the CSS within the &lt;style> tag of the html. This style tags are contained with the &lt;head> section of the page.
+          <span>
+            &lt;head>
+            &lt;title> Internal Example &lt;/title>
+            &lt;style type =”text/css”>
+            H1 {color: green
+            Font-style: italic;}
+            &lt;/style>
+          </span>
+          Another method is using external style sheets, these are where the style sheet is stored in a separate file. Therefore, the html document only contains html code, which links to an external CSS style sheet. An example is shown
+          below:
+          <span>
+            &lt;head>
+            &lt;title>CSS example &lt;/title>
+            &lt;link rel = “stylesheet” , type=”text/css” href=”mystyle.css”/>
+            &lt;/head>
+          </span>
+          An alternative way to include external style sheets could be done using the “@import”.
+          <span>
+            &lt;head>
+            &lt;title> CSS import example &lt;/title>
+            &lt;tyle type=”text/css”>
+            @import = url(style.css)
+            &lt;/style>
+            &lt;/head>
+          </span>
+          When we separate the content and apperance were doing something called two degrees of separation. This is more practical when working with a webpage that consist of many pages, as we could simply change one line of code through the CSS
+          rather than going through all our html code. Where we want to apply a style to a specific element, on a particular page; we use an inline tag. This is done within html in which we specify the style attribute. An example is shown below:
+          <span>
+            &lt;p style= “color:white; background-color: blue;”> Hello&lt;/p>
+        </span>
+        </p>
+      </div>
+      <!-- defines the board of the page -->
+      <div id="board2">
+        <!-- This div tag defines a board to contain a media --><img id="board2img" src="img/cssexp.png" alt="internet vs web" title="internet vs web" />
+      </div>
+    </div>
+    <div id="board3">
+      <div id="ChapterIII">
+        <!-- This div tag contains the contents of the third chapter -->
+        <h2>CSS selectors </h2>
+        <!-- Provides title for the purpose of chaper -->
+        <p id="3" class="pSearch">CSS selectors are used to set a style an element within the html document. They are three basic selectors to define the appearance of these elements within the html. These include tags selectors, if we specify a
+          tag in the CSS,
+          this tells the browser to render all instances of the tag within html to the property appearance specified in the CSS. For example if we were to use the selector p { /*specified property here*/} in CSS, all the instances of &lt;p> tags
+          within
+          html would style with the specified property defined in the CSS. Another selector is the Class selector, this works the same way, by matching all the tags in that class to be styled to the specified property set in CSS. For example
+          &lt;p class= "special" &lt;/p> and &lt;h1 class= "special" /> . Both are different tags, but each tag has the same class. This class would be addressed and set to a specific style using CSS. For example: .special { /*specified
+          appearance*/.
+          The
+          last selector is the id selector. This uniquely identifys one tags, to style in the CSS. For example: &lt;p> &lt;span> id=”oneoff”> Important &lt;/span> &lt;/p>. This individual tag can be styled using CSS, like this: #oneoff {color: red;}
+          &lt;/p>
+      </div>
+      <div id="laptop2"><img id="board3img" src="img/laptop.png" alt="laptop" /></div>
+      <div id="ChapterIV">
+        <!-- This div tag contains the content of the fourth chaper -->
+        <h2>CSS units </h2>
+        <p id="4" class="pSearch">CSS is able to support many types of measurement unit. There are two types of unit of measurements we can use in CSS. First one is an absolute unit. These units of measurements are calculated independently of
+          another page. This is
+          useful when you want the measurement to be precise. Examples include; pixels (px) points (pt) and millimetres (mm). The second units are relative units. These units are calculated proportionally against another page content or browser
+          default. Example of units include, percentages (%), Ems (em) and Exes (ex). A good designed website will use a combination of both. </p>
+      </div>
+    </div>
+    <div class="break" style="height: 1800px;">
+      <div>
+        <div id="ChapterV"></div>
+        <!-- This div tag defines fifth chapter the fifth chapter -->
+        <div>
+          <h2>The CSS box Model </h2>
+          <!--this contains the title of the content -->
+          <p id="5" class="pSearch">The CSS box model is important in terms of the layout structure. The box model is more focused on where the box (tag) is placed rather than the contents within the box. We vislise each tag (links, paragraphs)
+            as a box. Therefore each tag corresponds to a box, and each box has a hierarchy structure. This means the properties of the boxes are not inherited from the parent boxes. The box properties define where the box is positioned and the
+            appearance of the box. The are three main box properties. One is called the border. The border is the outline of the box, and there are 3 properties of the border we could set. This is the width of the border:
+            <span>
+              border-width: 20px;
+            </span>
+            The style of the border, this sets if the border is dotted etc
+            <span>
+              border-style: sold|dashed|
+            </span>
+            The color of the border, a valid colour value
+            <span>
+              border-color: blue;
+            </span>
+            Below is a simple shorthand we can set the 3 properties of the border:
+            <span>
+              p {border: 20px solid geen }
+            </span>
+            Another box property is called padding. This is the space between the inside of the border and outside of the contents. This creates inside of the boxes.
+            <span>
+              p {border: 20px solid green;
+              padding: 20px;}
+            </span>
+            The last box property is called the margin, this is the space outside of the border of the box. This is good for content spacing.
+            <span>
+              p {border: 20px solid green;
+              padding: 20px;
+              margin: 20px;}
+            </span>
+          </p>
+          <table>
+            <tr>
+              <th>Declaration</th>
+              <th>Results</th>
+            </tr>
+            <tr>
+              <td>border-width: 20px</td>
+              <td>width 20px on all 4 sides</td>
+            </tr>
+            <tr>
+              <td>border-left-width: 20px;</td>
+              <td>width 20px on left-hand side only</td>
+            </tr>
+            <tr>
+              <td>margin: 20px; 40px</td>
+              <td>margin 20px top/bottom 40px left/right</td>
+            </tr>
+            <tr>
+              <td>padding: 20px; 40px; 10px; 30px</td>
+              <td>Padding set for top/right/bottom/right</td>
+            </tr>
+            <tr>
+              <td>border: 20px solid blue</td>
+              <td>20px, solid blue border for all 4 sides</td>
+            </tr>
+          </table>
+          <p id="6" class="pSearch">The position property specifies how boxes are positioned using CSS </p>
+          <table>
+            <tr>
+              <th>Type of Positions</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>static</td>
+              <td>A default position for boxes. This is not normally used unless to override another position</td>
+            </tr>
+            <tr>
+              <td>relative</td>
+              <td>An element with the position absolute is position relatively the nearest positioned box</td>
+            </tr>
+            <tr>
+              <td>Absolute</td>
+              <td>This removes elements from natural page flow and allows it to be positioned anywhere</td>
+            </tr>
+            <tr>
+              <td>Fixed</td>
+              <td>As the name suggest, it sets a box to a fix position in the page</td>
+            </tr>
+          </table>
+          <p id="7" class="pSearch">From here you can use the properties top and bottom to precisely position your elements on the page</p>
+        </div>
+      </div>
+      <div id="board4" style = "top: 3100px;"><!-- To div tag is used a board where its contains a media-->
+        <img id="board4img" src="img/boxmodel.png" alt="internet vs web" title="internet vs web" />
+        <!-- contains image-->
+      </div>
+    </div>
+    <div id="endSection">
+      <!-- This contains defines the end section of the webpage, acts at a footer -->
+      <div class="endSection"></div>
+      <div class="courses">
+        <p class="courses" id="heading">Courses :</p>
+        <p class="courses"><a href="history.html">History</a></p>
+        <p class="courses"><a href="html.html">HTML</a></p>
+        <p class="courses"><a href="css.html">CSS</a></p>
+        <p class="courses"><a href="script.html">Script</a></p>
+      </div>
+      <div id="endAbout"><a href="about.html">About us</a></div>
+      <div class="endSearch"><img class="logo imgLogo" src="img/logo.jpg" alt="logo " /></div>
+    </div>
+    <div id="resultsBorder">
+      <!-- this div tag contains the results from the search the user used.-->
+      <div id="results">
+        <h2>Results </h2>
+      </div><button id="cancel">Cancel</button>
+      <!-- A button to cancel the button-->
+    </div>
+  </div>
+  <script src="js/search.js"></script>
+  <!--A script linking to the search -->
+</body>
+
+</html>

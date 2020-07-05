@@ -1,0 +1,213 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>history</title>
+  <link rel="stylesheet" type="text/css" href="css/webcate.css">
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+
+</head>
+
+<body>
+
+  <div id="contents">
+    <!-- Contains the contents of the page-->
+    <nav>
+      <ul>
+        <!-- A list to define the menu/navigation of the page-->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="html_quiz.html">Quiz</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="#">Courses</a>
+          <ul>
+            <li><a href="history.html">History</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="script.html">Java Script</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Chapters</a>
+          <ul class="dropdwn">
+            <li><a href="#ChapterI">Chapter I</a></li>
+            <li><a href="#ChapterII">Chapter II</a></li>
+            <li><a href="#ChapterIII">Chapter III</a></li>
+            <li><a href="#ChapterIV">Chapter IV</a></li>
+            <li><a href="#ChapterV">Chapter V</a></li>
+          </ul>
+        </li>
+        <li>
+          <form class="search" onsubmit="searching()" action="javascript:; ">
+            <!-- A search button incase user wants to search for something -->
+            <input type="text" id="searchGo" placeholder="Enter A keyword" name="search">
+            <button type="submit"><i class="submitSearch"></i></button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <!-- A div tag containing the logo image and the title of the homepage -->
+      <img class="logo imgLogo" src="img/logo.jpg" alt="logo " />
+      <h1 id="titleLogo" class="logo">WEB<span id="yellowLogo">CATE </span></h1>
+    </div>
+
+    <div id="page">
+      <!-- This div tag contains heading one of the homepage -->
+      <h1> History </h1> <!-- This heading provides the information of the purpose of the content-->
+    </div>
+
+
+    <div>
+      <div>
+        <div id="ChapterI"> </div> <!-- this would define the first chapter of the content.-->
+        <div>
+          <h2> Breif History Of The Web </h2> <!-- Explains the purpose of the section -->
+          <p id="1" class="pSearch"> Vannevar Bush (1890-1974) an American Engineer, who introduced the idea of Memex in an article called “As We May Think”. Memex is a theoretical proto-hypertext system. Within the Article, Bush raised his concerns
+            of the increased of evidence being limited “today as specialization extends”. He puts forwards a solution using the theoretical idea of “Memex”. In which he describes it as a “A device in which an individual stores all his books, records
+            and
+            communication”. This influenced the development of future hypertext languages. As later on in the 1960s Doug Englebart and Ted Nelson independently propose idea of “hypertext”. Ted Nelson created the term “hypertext” and
+            founded the first hyper text project (Xanadu) in the 1960. Meanwhile this was all being done and unknown to Englebart.As he too came up with a similar idea. in 1962 he published a report “Augmenting human intellect: A conceptual”. This
+            was a conceptual computer display which shows
+            information from space of linked data. Later on in 1967, ARPANET was developed by the US Advanced Research Project Agency. The initial idea was to communicate and share resources between educative institutions. The
+            idea of internet packs was then introduced, which through the 1970s and 1980s gradually evolved into the internet. Within the 1990s we had what we called the World wide web. This development of the World
+            wide web was greatly influenced by Timothy John Berners Lee, in fact Lee is the scientist who invented the World wide web! In 1980 Lee was working at CERN. This is where he describes the concept of a global system, inspired of the
+            concept of hypertext. Towards the late 80’s Lee took hes idea further and published a paper called “Information Management: A proposal”. Within the article he describes the use of hypertext along
+            with the internet to create a global system used for sharing across information. This was what he called the “World wide web”. Lee also created the first web browser and editor. The world first website was launched on 6 August 1991.</p>
+        </div>
+      </div>
+      <div id="board1">
+        <!-- content and board -->
+        <img id="board1img" src="img/theweb.jpg" alt="internet vs web" title="internet vs web" />
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <div id="ChapterII"> </div> <!-- This div define the second chapter -->
+        <h2> Difference between the web and the internet </h2> <!-- Provides information of what the chapter is about -->
+        <p id="2" class="pSearch"> The world wide web (W3) is a system of internet servers which supports formatted documents. The documents are formatted in a mark-up language Hyper Text Mark-up Language (HTML). This is a language that supports
+          links to other
+          documents (CSS, java script- We will cover these in the next following sections). As well as to links to documents, it supports graphics, audio and videos files. In simple terms the web is an information system which holds web
+          resources.
+          Each web resources can be identified by a Uniform Resource Locators (URL). The internets is wide global network system, sometimes described as a “networks of networks”. The internet uses TCP/IP to transmit data along various media. The
+          first network developed was a <a href="https://techterms.com/definition/p2p">peer-to-peer</a> where each computer would be connected to each other, to share resources. This later gradually enhanced into a wider global network, which -as we
+          mention before- is the internet. The internet is
+          a combination of private, public, business and government technologies. The terms internet and world wide web are sometimes used interchangeably. However, there is a difference. The internet is a global communication system, this includes
+          hardware and infrastructure. On the other hand, the web is the service (web resources etc) passed through the internet. Networking infrastructure allows hardware devices (Servers, Desktop PCS, Mobile etc) to physically connect to one
+          another. The protocols of the internet TCP/IP specify how these communications are carried out. The <a href="https://www.computerhope.com/jargon/c/client.htm">client</a> (and <a href="https://techterms.com/definition/server">servers</a>)
+          will allow the user and devices to access and use the internet services. </p>
+      </div> <!-- defines the board of the page -->
+      <div id="board2">
+        <!-- This div tag defines a board to contain a media -->
+        <iframe id="board2img" src="https://www.youtube.com/embed/Dxcc6ycZ73M" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="board3">
+      <div id="ChapterIII">
+        <!-- This div tag contains the contents of the third chapter -->
+        <h2> Present: What we use the web for</h2> <!-- Provides title for the purpose of chaper -->
+        <p id="3" class="pSearch"> The Academic/Scientific web:
+          The main reason of the web being introduced was for educative purposes- To share resources between universities. Today we still use the web for this purpose. You as a student are currently reading this, to further your own knowledge about
+          the “history of the internet”. As you also do in your other modules, perhaps to get information about a piece of research or revising for an exam.
+
+          The Commercial web:
+          This is where business use the web to sell the produces. You of course would have come across these websites, whether you’re doing your grocery shopping or buying a new video game. Examples of commercial web is Amazon, where business
+          provides to the consumers. eBay is another example where consumers buys from a customer. There also many businesses to business data exchange services.
+
+          The Social Media:
+          These include YouTube, Instagram or Twitter, which given you’re a students, most of you fairly use these a lot.
+
+          The Creative web:
+          This could be used for finding data, or specific information. Perhaps you are looking for a specific API to help with your programming project.
+        </p>
+      </div>
+      <div id="laptop2">
+        <img id="board3img" src="img/laptop.png" alt="laptop" />
+      </div>
+      <div id="ChapterIV">
+        <!-- This div tag contains the content of the fourth chaper -->
+        <h2> Future: What we could use the internet for </h2>
+        <p id="4" class="pSearch"> Web Apps:
+          To improve on mobile sites, web app can be introduced with the help of technological advancements. Progressive Web Apps (PWA) appear as a great concept. With the help of the internet evolution and adaptation of HTML 5. It provides the same
+          user flawless experience as the native apps we have on our phones.
+
+          Push Notifications Prevails:
+          Just we have seen with mobiles app they are able to alert us with notification. We are slowly also seeing this along with websites. If you notice sometimes when you go on a website on chrome it asks if you want to receive notifications
+          from this browser. This is to help reach a vast audience and provide benefits for online marketing.
+
+          Browser Extensions would become popular:
+          Google chromes extensions are growing on demand, and many more have been introduced, to make the browser more useful.
+
+          VR and AR:
+          VR virtual reality can be used to enhance the use of websites when using them. AR would show a glimpse of a virtual world.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="break">
+      <div>
+        <div id="ChapterV"> </div> <!-- This div tag defines fifth chapter the fifth chapter  -->
+        <div>
+          <h2> Seperation of Concerns and Benefits </h2>
+          <!--this contains the title of the content -->
+          <p id="5" class="pSearch"> Before moving on to the other sections. We would need to understand how the documents within a web are formatted. This is done using a hypertext Mark-up language (HTML). HTML is the authoring language
+            using for creating
+            documents (webpages) on the World wide web. The HTML is defining the content structure and semantics (layout) of the webpage by using tags and attributes. HTML can contain links to other text files such as a Cascading style sheet
+            (CSS). A cascading style sheet is used to format the layout of webpages. It defines the text styles and other aspects concerning the presentation of the webpages. CSS has a set of properties to define how the content is display it also
+            includes selectors (defined with the HTML) which selects the elements you want to apply those properties on. The HTML links to another document called Java script. This is an object-oriented programming language to create
+            interactivity on the webpage. In other words, it defines they behaviour of the webpage. JavaScript is a client-side language that has a similar syntax to the object-oriented language Java. There are also other common languages which you
+            could use to define the behaviour such as PHP, Perl, Java and ruby these are all server-side scripting languages, however for this course you would only need to learn about JavaScript. The HTML could link to the other documents. The
+            normally links are CSS and HTML documents- these could also be embedded within the HTML. However, it usually good practice to separate the content (HTML), Presentation (CSS) and behaviour (JavaScript) of a webpage. Separating content
+            and appearance into separate
+            files allows you to easily work on the two separately. It’s simple in terms of maintenance and makes it easier to defines styles on the whole HTML document. Separation can be seen to be more useful, when you have a large website. By
+            using separation, it means you can share the styles across multiple pages from a single CSS file.</p>
+        </div>
+      </div>
+      <div id="board4">
+        <!-- To div tag is used a board where its contains a media-->
+        <img id="board4img" src="img/html.jpg" alt="internet vs web" title="internet vs web" /> <!-- contains image-->
+      </div>
+    </div>
+
+
+    <div id="endSection">
+      <!-- This contains defines the end section of the webpage, acts at a footer -->
+      <div class="endSection"> </div>
+      <div class="courses">
+        <p class="courses" id="heading"> Courses :</p>
+        <p class="courses"><a href="history.html">History</a></p>
+        <p class="courses"><a href="html.html">HTML</a></p>
+        <p class="courses"><a href="css.html">CSS</a></p>
+        <p class="courses"><a href="script.html">Script</a></p>
+      </div>
+      <div id="endAbout"><a href="about.html">About us</a></div>
+      <div class="endSearch">
+        <img class="logo imgLogo" src="img/logo.jpg" alt="logo " />
+      </div>
+    </div>
+
+    <div id="resultsBorder">
+      <!-- this div tag contains the results from the search the user used.-->
+      <div id="results">
+        <h2> Results </h2>
+      </div>
+      <button id="cancel">Cancel</button> <!--  A button to cancel the button-->
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="js/search.js"></script>
+  <!--A script linking to the search -->
+</body>
+
+</html>

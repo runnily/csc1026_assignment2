@@ -1,0 +1,392 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Java Script</title>
+  <link rel="stylesheet" type="text/css" href="css/webcate.css">
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+
+</head>
+
+<body>
+
+  <div id="contents">
+    <!-- Contains the contents of the page-->
+    <nav>
+      <ul>
+        <!-- A list to define the menu/navigation of the page-->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="html_quiz.html">Quiz</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="#">Courses</a>
+          <ul>
+            <li><a href="history.html">History</a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="script.html">Java Script</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Chapters</a>
+          <ul class="dropdwn">
+            <li><a href="#ChapterI">Chapter I</a></li>
+            <li><a href="#ChapterII">Chapter II</a></li>
+            <li><a href="#ChapterIII">Chapter III</a></li>
+            <li><a href="#ChapterIV">Chapter IV</a></li>
+            <li><a href="#ChapterV">Chapter V</a></li>
+          </ul>
+        </li>
+        <li>
+          <form class="search" onsubmit="searching()" action="javascript:; ">
+            <!-- A search button incase user wants to search for something -->
+            <input type="text" id="searchGo" placeholder="Enter A keyword" name="search">
+            <button type="submit"><i class="submitSearch"></i></button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <!-- A div tag containing the logo image and the title of the homepage -->
+      <img class="logo imgLogo" src="img/logo.jpg" alt="logo " />
+      <h1 id="titleLogo" class="logo">WEB<span id="yellowLogo">CATE </span></h1>
+    </div>
+
+    <div id="page">
+      <!-- This div tag contains heading one of the homepage -->
+      <h1> JavaScript </h1> <!-- This heading provides the information of the purpose of the content-->
+    </div>
+
+
+    <div>
+      <div>
+        <div id="ChapterI"> </div> <!-- this would define the first chapter of the content.-->
+        <div>
+          <h2> Web Forms </h2> <!-- Explains the purpose of the section -->
+          <p id="1" class="pSearch"> Before we start going into the behaviour aspects of websites, we will cover a little bit of CSS, specifically web forms. Learning web forms will be useful alongside java script. Web forms are form tags and
+            attributes used to create an interface for user interaction. The core purpose of a form is to collect the user’s information and then return it to the server. The form specifies how the browser should include use that data. The form
+            structure is specified using the &lt;form> tags. The method and action attributes should be included in the form. Below is an example of how the form tag should look like:
+            <span>
+              &lt;body>
+              &lt;form method = “get” action= http://a.server.com/script>
+              &lt;p>
+              Enter your name: &lt;input type= “text” name= “username”/>
+              &lt;/p>
+              &lt;/form>
+              &lt;body>
+            </span>
+            Form controls are replaced tags used to collect user input. When rendered the tag is replaced by the browsers interface for the control type. Each form control will have a name attribute, and most will have a value attribute. On a
+            successful submission the form controls name/value pairs would be given to the server. For example checkboxes is a type of form control, the value selected would go to the server. Below are some common form controls:
+          </p>
+          <table>
+            <tr>
+              <th>Control form</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+            <tr>
+              <td>One-line text input</td>
+              <td>The deafult form control specified with the &lt;input> tag. Includes attributes such as size to control the width (number of visable characters) and includes maxlength for the number of characters it can accept</td>
+              <td><span>
+                  &lt;form method="get" action = "http://a.server.com/script">
+                  &lt;p>
+                  Enter yout name: &lt;input type="text" name="username"/>
+                  &lt;p>
+                  &lt;form>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Radio bottons</td>
+              <td>To create mutually exclusive controls- meaning user can only select one radio botton</td>
+              <td>
+                <span>
+                  &lt;p> Choose ONE of the following:
+                  &lt;input type="radio" name="choice" value="A" checked="checked/>A
+                  &lt;input type= "radio" name= "choice" value="B"/>B
+                  &lt;input type= "radio" name= "choice" value="C"/>C
+                  &lt;/p>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Checkboxes</td>
+              <td>create indiviudual independant controls, returns on if selected. However it better to set a value attribute</td>
+              <td>
+                <span>
+                  &lt;p>Choose ONE of the following
+                  &lt;input type="checkbox" name="A" value="Yes">/A
+                  &lt;input type= "radio" name= "B" value="Yes"/>B
+                  &lt;input type= "radio" name= "C" checked = "checked"/>C
+                  &lt;/p>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Drop down menues</td>
+              <td>The &lt;select> tag allows user to select from a list, your able to predefine the select tag if needed.</td>
+              <td>
+                <span>
+                  &lt;p>Choose ONE of the following:&lt;/p>
+                  &lt;select name="drop_down">
+                  &lt;option value="NONE" selected="selected">No Thanks&lt;/option>
+                  &lt;option value="A">Choose A&lt;/option>
+                  &lt;option value="B">Choose B&lt;/option>
+                  &lt;option value="C">Choose C&lt;/option>
+                  &lt;/p>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Multi-line input</td>
+              <td>collect user data using &lt;textarea> tag. This requires the row and colomn attributes to set the size</td>
+              <td>
+                <span>
+                  &lt;p> Add some thoughts of your own... &lt;br>
+                  &lt;textarea name="fare_name" rows="4" cols="20">&lt;/textarea>
+                  &lt;/p>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>Password fields</td>
+              <td>This input time hides the input which is input into the text field.</td>
+              <td>
+                <span>
+                  &lt;p> Provide password&lt;br>
+                  &lt;input type="password" name="my_password">&lt;/textarea>
+                  &lt;/p>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="board1">
+        <!-- content and board -->
+        <img id="board1img" src="img/webform.png" alt="internet vs web" title="internet vs web" />
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <div id="ChapterII"> </div> <!-- This div define the second chapter -->
+        <h2> Form organisation and methods. </h2> <!-- Provides information of what the chapter is about -->
+        <p id="2" class="pSearch"> There are form organisation you could use to allow you to organise the forms. These are &lt;fieldset> &lt;legend and &lt;label which are explained below: </p>
+        <table>
+          <tr>
+            <th>Form organsation</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td>Fieldset and legend</td>
+            <td>These are block-level organsations used to group forms together</td>
+            <td>
+              <span>
+                &lt;fieldset>
+                &lt;legend>Your choices&lt;/legend>
+                Choose ONE of the following: <br />
+                &lt;input type="radio" name="choice" value="A" /> Apple
+                &lt;input type="radio" name="choice" value="B" /> Banana
+                &lt;/fieldset>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>Using labels and id</td>
+            <td>This allows the text to be expilicty assoicated with a form control.</td>
+            <td>
+              <span>
+                &lt;input type="radio" name="choice" value="A" id="A1" />
+                &lt;label for="A1">Apple&lt;/label>
+                &lt;label>
+                &lt;input type="radio" name="choice" value="B" /> Banana
+                &lt;/label>
+              </span>
+            </td>
+          </tr>
+        </table>
+      </div> <!-- defines the board of the page -->
+      <div id="board2" style="top: 2407px;">
+        <!-- This div tag defines a board to contain a media -->
+        <img id="board2img" src="img/webformtemp.png" alt="internet vs web" title="internet vs web" />
+      </div>
+    </div>
+    <div id="board3">
+      <div id="ChapterIII">
+        <!-- This div tag contains the contents of the third chapter -->
+        <h2> Types of Buttons </h2> <!-- Provides title for the purpose of chaper -->
+        <p id="3" class="pSearch"> There are three types of form control buttons. These submit button makes the browser submit the data to the server. Here is an example of the submit button: &lt;input type=“submit” value=“submit this info” />The
+          reset
+          is a button which clears the users input and sets the values to its initial state without reloading the page. The next form control button is simply called button. This is a generic button, which can be only used when attached to a
+          client-side scripted actions or events. </p>
+      </div>
+      <div id="laptop2">
+        <img id="board3img" src="img/submit.png" alt="submit" style="right: 41%;
+    width: 200px;" />
+      </div>
+      <div id="ChapterIV">
+        <!-- This div tag contains the content of the fourth chaper -->
+        <h2> The Submit Process </h2>
+        <p id="4" class="pSearch">When a button is clicked the name/value pairs within the forms are attached to a request within the URL. The URL is specified by the action attribute in the form tag. The method attribute would specify what type of
+          request is going to be made. There are two types of methods. This includes the GET method and POST method. The GET method is the default method for all web request. This appends the data to the end of the URL query in a query string. This
+          means the user input can be seen -which is why the get method is not usually used for sensitive data. The processing script will take a look in the query string and extract the data it needs. This is an example of a query string
+          http://.../formscript.php?inputbox=Arnold&choice=A. The post method specifies that the data should be carried within the body of the request. Therefore, the URL would not contain the query string and would look something like this:
+          http://.../formscript.php. The post method is not a default method, so it needs to be invoked by specifying the method “post”. Once the user has interacted with the form, the results are now processed. There are 3 stages involving the
+          processing. This includes validation, processing and feedback. The validation checks that the forms have been completed and has the correct type of data. Processing is using the data within the form and doing something useful with it. The
+          feedback returns something to user. The validation can be done on a client side (java script) or server side (python, php etc). However, for this module you would only need to understand the client side.</p>
+      </div>
+    </div>
+
+
+    <div class="break" style="height: 2630px;;">
+      <div>
+        <div id="ChapterV"> </div> <!-- This div tag defines fifth chapter the fifth chapter  -->
+        <div>
+          <h2> JavaScript Programming recap</h2>
+          <!--this contains the title of the content -->
+          <p id="5" class="pSearch"> Java script is an object-oriented scripting language that is commonly used to create interactive behaviour effects within web browsers. The language is executed in the web browser on the client machine. Hence the
+            name “client side” scripting. Java script could be added to pages using the inline &lt;script>
+            <span>
+              &lt;script type= “text/javascript”>
+              document.write(“&lt;h1>Hello world&lt;/>”);
+              &lt;/script>
+            </span>
+            or using an external script by specifying the src attribute within the &lt;script> tag
+            &lt;script type= “text/javaScript” src= “scripts/myjava.js”> &lt;/script>
+            Your &lt;script> can be placed within the &lt;head> or &lt;body> tag of your html. Now we know how to insert out script tag we would it time to look at the syntax of java script. The common constructs within java script -and in most
+            programming languages- include variables, loops, arrays and conditionals.
+            Java data types variables and operators
+            The type variable within java script does not have to be define, therefore we can declare the same variable name with different data types
+            <span>
+              data = “Hello”;
+              data = “26”;
+              data = “true”
+              data = new Array();
+            </span>
+            Although the data type is not declared it good practice to declare the variable with the var key word
+            <span>
+              var myString = “Hello”;
+            </span>
+            For data operation we can use include:
+            <span>
+              + - * / ++
+            </span>
+            The logical operations include
+            <span>
+              && || !
+            </span>
+            and lastly we have some comparation data types
+            <span>
+              &lt;> &lt;= >= == !=
+            </span>
+            Java script: Arrays are used to store same data types. To create an array we would normally do this
+            <span>
+              var day = new Array("Mon","Tue","Wed","Thurs","Fri","Sat","Sun");
+              var day = new Array(7);
+              day[0] = "Mon";
+              day[1] = "Tue";
+            </span>
+            A loop is a sequence of instructions which is continually repeated until a certain condition is reached.
+            <span>
+              for (i = 0; i &lt; 10; i++) { document.write('
+              Hello World!
+              '); }
+
+              do { name = window.prompt('You must enter your name',''); }
+              while (name == "");
+
+              while(name == "") {
+              name = window.prompt('You must enter your name',''); }
+            </span>
+            You could make a loop to loop through an array
+            <span>
+              for(i=0; i&lt; day.length, i++) {
+              document.write[i} + “&lt; br />”);
+              }
+            </span>
+            Condtional statement can be done using if…else statement such as
+            <span>
+              if (name == "Arnold"){ document.write("
+              Hello Arnold
+              "); } else { document.write("
+              Who are you?
+              "); }
+            </span>
+            Or using a switch case statement
+            <span>
+              switch (name){ case "Arnold": document.write("
+              Hello Arnold
+              "); break; case "Dave": document.write("
+              Hello Dave
+              "); break; default: document.write("
+              Who are you?
+              "); }
+            </span>
+            Java script defines functions using the function keyword
+            <span>
+              function calculate(x,y)
+              { answer = (x*y)/2 * 100; return answer; }
+            </span>
+            We are able to make a call to this method by doing this
+            <span>
+              thisNumber = calculate(5,10);
+              alert(thisNumber);
+            </span>
+            As for comments in java they could either be declared single lines or multiple lines
+            <span>
+              // This is a single line
+              /* This is a multi‐line comment */
+            </span>
+            DOM: document object Model is a way we can access elements in html through javascript, refer to the video for further information.
+          </p>
+        </div>
+      </div>
+      <div id="board4" style="top: 4080px;">
+        <!-- To div tag is used a board where its contains a media-->
+        <iframe id="board4img" src="https://www.youtube.com/embed/l-0nPnSvbX8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!--contains video-->
+      </div>
+    </div>
+
+
+    <div id="endSection">
+      <!-- This contains defines the end section of the webpage, acts at a footer -->
+      <div class="endSection"> </div>
+      <div class="courses">
+        <p class="courses" id="heading"> Courses :</p>
+        <p class="courses"><a href="history.html">History</a></p>
+        <p class="courses"><a href="html.html">HTML</a></p>
+        <p class="courses"><a href="css.html">CSS</a></p>
+        <p class="courses"><a href="script.html">Script</a></p>
+      </div>
+      <div id="endAbout"><a href="about.html">About us</a></div>
+      <div class="endSearch">
+        <img class="logo imgLogo" src="img/logo.jpg" alt="logo " />
+      </div>
+    </div>
+
+    <div id="resultsBorder">
+      <!-- this div tag contains the results from the search the user used.-->
+      <div id="results">
+        <h2> Results </h2>
+      </div>
+      <button id="cancel">Cancel</button> <!--  A button to cancel the button-->
+    </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="js/search.js"></script>
+  <!--A script linking to the search -->
+</body>
+
+</html>

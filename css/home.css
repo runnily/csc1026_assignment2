@@ -1,0 +1,223 @@
+h1 {
+  margin: 5%; /*defines margin for h1*/
+}
+
+#firstSection { /*defines first section div tag to define what its going to fit on the screen*/
+  position: relative;
+  height: 700px;
+}
+
+img.firstSection { /*defines where the image is positioned within the first section of the div tag*/
+  position: absolute;
+  width: 800px;
+  left: 20%;
+  bottom: 0%;
+}
+
+p.firstSection { /*defines where the paragraph is positioned within the first sections of the div tag */
+  position: relative;
+  width: 202px;
+  font-size: 25px;
+}
+
+#secondSection { /*defines the second section div and where its going to be positioned*/
+  margin: 5%;
+  position: relative;
+  bottom: 150px;
+  left: 5%
+}
+
+img.secondSection { /*defines the size of the images (arrows) in the div tag are*/
+  width: 50px;
+}
+
+div.secondSection { /*Makes the div tag in the second section inline to make the lines next to each other*/
+  display: inline-block;
+}
+
+p.secondSection { /*defines where the paragraph is positioned*/
+  margin: 0;
+  padding: 15px;
+  display: inline;
+}
+
+#thirdSection { /*defines where third sections is positioned*/
+  position: relative;
+  float: left;
+  bottom: 180px;
+  background-color: #FDEFE2; /*defines the background color*/
+}
+
+img.thirdSection { /*defines where the image in the third section is positioned*/
+  width: 500px;
+  float: right;
+  position: relative;
+  bottom: 136px;
+}
+
+p.thirdSection { /*defines the font size of the third section*/
+  font-size: 20px;
+}
+
+button.thirdSection { /*defines where the button is positioned and apperence*/
+  background-color: #F1863B; /*changes the color of button*/
+  color: white;
+  width: 195px;
+  border-radius: 25px; /*Makes the border curved*/
+  font-size: 15px;
+  margin: 5%; /*positioning purposes*/
+}
+
+#fourthSection { /*defines where the fourth section is positioned*/
+  position: relative;
+  float: left;
+  bottom: 195px;
+  background-color: #E7F7F7; /*changes color*/
+}
+
+img.fourthSection { /*defines where the image is positioned in the fourth section*/
+  width: 500px;
+  float: left;
+  position: relative;
+  bottom: 195px;
+}
+
+p.fourthSection { /*defines the font size of the paragraph*/
+  font-size: 20px;
+}
+
+button.fourthSection { /*defines where the button in the fourth section is*/
+  background-color: #56C4C5;
+  color: white;
+  width: 195px;
+  border-radius: 25px;
+  font-size: 15px;
+  margin: 5%;
+}
+
+#fifthSection { /*defines the fifth section its positions and color*/
+  position: relative;
+  float: left;
+  bottom: 209px;
+  background-color: #E0E4F0; /*changes the color*/
+}
+
+img.fifthSection { /*this defines where the image in the fifth section is positioned*/
+  width: 500px;
+  float: right;
+  position: relative;
+  bottom: 150px;
+}
+
+p.fifthSection { /*defines the font size*/
+  font-size: 20px;
+}
+
+button.fifthSection { /*defines where the button is positioned in the div and appearence*/
+  background-color: #3D5AA8;
+  color: white;
+  width: 190px;
+  border-radius: 25px; /*Makes the button border curved*/
+  font-size: 15px;
+  margin: 5%;
+}
+
+#sixthSection { /*defines the appearence of the sixth second and position*/
+  position: relative;
+  float: left;
+  bottom: 225px;
+  background-color: #EEFCEF; /*changes the color*/
+}
+
+img.sixthSection { /*defines where the image in the sixth section is*/
+  width: 500px;
+  float: left;
+  position: relative;
+  bottom: 100px;
+}
+
+p.sixthSection { /* defines where the paragraph is within the sixth section*/
+  font-size: 20px;
+}
+
+button.sixthSection { /*defines where the button in the sixth section is positioned*/
+  background-color: #78D481;
+  color: white;
+  width: 195px;
+  border-radius: 25px;
+  font-size: 15px;
+
+}
+
+#thirdSection, #fourthSection, #fifthSection, #sixthSection { /*defines how each section border looks like*/
+  z-index: 2; /* because div slide is very large allows sections to be infront so buttons clickable*/
+  border-style: solid;
+  border-width: 15px;
+  border-color: white;
+  border-radius: 100px;
+  height: 400px; /*defines the height of the section*/
+}
+
+.slideshow { /* This defines where the slide show will be positioned */
+  position: relative;
+  margin: auto; /*positioned in the middle*/
+  bottom: 160px; /*used to position the div slideshow*/
+  left: 39%; /*for positining purposes*/
+}
+
+/* Caption text */
+.caption { /*defines how the text is going to look like*/
+  font-size: 11px; /*defines the font size of the caption*/
+  padding-bottom: 5px; /*for position purposes*/
+  position: absolute;
+  bottom: 10px; /*for position purpses*/
+  width: 18%; /*defines width of the caption*/
+  left: 0%; /*for positing purposes*/
+}
+
+.slideImg { /*defines how the images are positioned*/
+  width: 150px; /*defines width*/
+  height: 150px; /*defines heighs*/
+  position: relative;
+  left: 3%; /*positions where it going to be*/
+}
+
+.num { /*this correspond to the number of images */
+  font-size: 12px; /*defines font size*/
+  padding: 8px 12px; /*defines padding*/
+  position: absolute; /*Makes is absolute*/
+  bottom: 187px; /*defining where it positioned*/
+  left: 3%; /*defines where it position*/
+}
+
+.circle { /*circles are used as indicators */
+  height: 13px; /*defines height and width*/
+  width: 13px;
+  margin: 0 3px; /*for positing purposes*/
+  background-color: #FDF4E2; /*defines color*/
+  border-radius: 50%; /*Makes it appear more rounded*/
+  display: inline-block; /*to allow the element (circles) appear inline with each other*/
+  transition: background-color 0.6s ease; /*allows to change the property easily, it changing backgound colour 0.6s*/
+}
+
+.active {
+  background-color: #F9C867; /*changes color of element*/
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade; /*provides animation name*/
+  animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; /*duration*/
+}
+
+@keyframes fade { /*Allow us to change animation*/
+  from {
+    opacity: 0.4 /*changes opactity*/
+  }
+
+  to {
+    opacity: 1 /*to one*/
+  }
+}

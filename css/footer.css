@@ -1,0 +1,47 @@
+/*This is a css file used by all the webpages to design the presentation of the footer*/
+
+#endSection {
+  position: relative; /* position the end second*/
+  bottom: 109px;
+  height: 50px;
+}
+
+div.endSection {
+  border-bottom: 3px solid #FDF4E2; /* this defines a line for the footer*/
+  margin: auto 5%; /* allows so it the line is not compelety at the end*/
+}
+
+p.courses {
+  margin-left: 15%; /*This is simply used for positioning*/
+  margin-bottom: -20px; /*This is used for positioning*/
+  color: #F1863B; /*defines the color*/
+}
+
+p.courses a {
+  color: #F1863B; /*This deines the color for the link*/
+}
+
+#heading {
+  color: #FDF4E2 /* this defines the color of the heading*/
+}
+
+#endAbout {
+  margin: auto 5%; /*This defines where the about paragraph stayss*/
+  position: relative;
+  right: 43%;
+  bottom: 90px;
+  float: right;
+}
+
+#endAbout a {
+  color: #F1863B; /*This defines the links */
+  font-family: "Dekko","Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+}
+
+.endSearch {
+  margin: auto 5%; /*This defines where the logo is positioned at the footer*/
+  float: right;
+  position: relative;
+  left: 11%;
+  bottom: 89px
+}

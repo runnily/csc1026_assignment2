@@ -1,0 +1,82 @@
+<!doctype html>
+<!-- The doctype simply to tell the praser what type of docuement were looking at. In this case were using html5 -->
+
+<html lang="en">
+<!-- html element includes an attribute called lang to specify the type -->
+
+<head>
+  <meta charset="utf-8"> <!-- defines character encoding of the docuement -->
+  <link rel="stylesheet" type="text/css" href="css/theme.css"> <!-- link to webpage overall theme-->
+  <link rel="stylesheet" type="text/css" href="css/footer.css"> <!-- link for the footer -->
+  <link rel="stylesheet" type="text/css" href="css/quiz.css"> <!-- link for how the quiz would look like-->
+  <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+  <title>Quiz</title> <!-- title of the page -->
+  <!--The title-->
+  <!--the style sheet-->
+</head>
+
+<body>
+  <div id="contents"> <!-- This div tage would contain contents of the quiz page-->
+    <nav>
+      <ul> <!-- A list to provide a menu for the page -->
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="#">Courses</a>
+          <ul>
+            <li><a href="history.html">History</a></li>
+            <li><a href="html.html#table">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="script.html">Java Script</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div> <!-- This would contain the name of webpage/company and logo-->
+      <img class="logo imgLogo" src="img/logo.jpg" alt="logo " />
+      <h1 id="titleLogo" class="logo">WEB<span id="yellowLogo">CATE </span></h1>
+    </div>
+
+    <div class="quiz" id = "quiz"> <!-- This div tag contains the quiz for the website -->
+      <p class="quiz"> Please select what you would like the quiz to be on?</p>
+      <form  method = "get" class="quiz" id = "quizForm" onsubmit="selection()" action="javascript:; ">
+        <fieldset class="quiz" id= "quizField">
+          <legend class = "quiz" id ="question">Please select an Answer:</legend>
+          <input type="radio" name="answer" value="history"><label id="answerOne">History</label><br> <!-- for radio butttons provided for the answer-->
+          <input type="radio" name="answer" value="html"><label id="answerTwo">HTML</label><br>
+          <input type="radio" name="answer" value="css"><label id="answerThree">CSS</label><br>
+          <input type="radio" name="answer" value="script"><label id="answerFour">Java Script</label><br>
+          <button  class="button" id="select" type="submit">Start</button> <!-- A button for provided to allow the user to select what they would like to be tested on -->
+          <button class="button" id="one" type="button">Next</button> <!-- A button for the first question for the quiz-->
+          <button class="button" id="two" type="button">Next</button> <!-- A button for the second question for the quiz-->
+          <button class="button" id="three" type="button">Next</button> <!-- A button for the third question for the quiz  -->
+          <button class="button" id="four" type="button">Next</button> <!--  a button for the fourth question for the quiz-->
+          <button class="button" id="five" type="button">Next</button> <!-- A button for the fifth question for the quiz -->
+          <p id = "finish"> Finished!</p> <!-- A paragraph called "finished" -->
+        </fieldset>
+      </form>
+      <img class="quiz" src="img/board.png" alt="laptop"> <!-- An image displayed  -->
+    </div>
+
+
+    <div id="endSection"> <!-- defines the end section of the page, which defining the footer -->
+      <div class="endSection"> </div>
+      <div class="courses">
+        <p class="courses" id="heading"> Courses :</p>
+        <p class="courses"><a href="history.html">History</a></p>
+        <p class="courses"><a href="html.html">HTML</a></p>
+        <p class="courses"><a href="css.html">CSS</a></p>
+        <p class="courses"><a href="script.html">Script</a></p>
+      </div>
+      <div id="endAbout"><a href="about.html">About us</a></div>
+      <div class="endSearch">
+        <img class="logo imgLogo" src="img/logo.jpg" alt="logo " />
+      </div>
+    </div>
+  </div>
+
+  <script src="js/quiz.js"></script> <!-- A link to the scrip -->
+
+</body>
+
+</html>

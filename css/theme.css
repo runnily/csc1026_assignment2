@@ -1,0 +1,119 @@
+body {
+  background-color: #F8F8F8; /*changes the background of the body*/
+}
+
+h2 {
+  margin-left: 5%; /*for position purposes of h2*/
+}
+
+h1 {
+  color: darkorange; /*Make it dark orange*/
+}
+
+p {
+  margin-left: 5%; /*for position purposes of p*/
+  margin-right: 5%; /* for posistion purpose of p*/
+}
+
+.submitSearch { /*defines how th button looks like*/
+  background: url("../img/search.png"); /*This defines the background of submit*/
+  background-size: contain; /*Make the image fit within the button*/
+  padding-right: 20px; /*shift padding to allow up to see image*/
+
+
+}
+
+#contents {
+  min-width: 510px;/*defines min width*/
+  max-width: 960px;/*defines max width*/
+  margin: auto;   /*this is what the content goes into*/
+  background-color: white; /*makes background white*/
+}
+
+.imgLogo {
+  /*speficy the logo image to be a width of 70px*/
+  width: 70px;
+}
+
+.logo {   /*Makes the logo inline*/
+  display: inline-block;
+}
+
+#yellowLogo {   /*Makes the some words within the logo title and orangy dark color*/
+  color: #FEF6E1;
+}
+
+a {
+  text-decoration: none;   /*Remove links decoration -no underline*/
+}
+
+nav {
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif"; /*defines font and font stack*/
+  float: right; /*Makes it positioned on the right*/
+
+}
+
+ul { /*Used for defining the unorder list*/
+  background: darkorange; /*sets color*/
+  list-style: none; /*To allow no list style*/
+  margin: 0; /*position purposes*/
+  padding-left: 0; /*position purposes*/
+  z-index: 1; /*so element is infront*/
+
+
+}
+
+li { /*defines color of the list*/
+  color: #fff; /*Allow color white*/
+  background: #FFA07A;
+  display: block;
+  float: left;
+  padding: 1rem; /*1 rem relative font size of root element*/
+  position: relative; /*Makes relative*/
+  text-decoration: none; /*remove bullet point*/
+  transition: background 2s ease-in-out;
+
+}
+
+li a { /*define color of link a */
+  color: #fff;
+}
+
+li:hover { /*defines what happens when you hover*/
+  background: red; /*changes it to red*/
+
+}
+
+ul li ul { /*define how the second level of the ul looks like*/
+  visibility: hidden; /*makes it hidden at first*/
+  opacity: 0; /*defines the opacity*/
+  min-width: 5rem;
+  position: absolute; /*make absolute*/
+  margin-top: 1rem;
+  left: 0; /*for position purposes*/
+}
+
+ul li:hover>ul, /*defines what happens to hover for the second level of the ul*/
+ul li ul:hover {
+  visibility: visible; /*when hover it makes it visible*/
+  opacity: 1; /*defines opacity*/
+  display: block;
+}
+
+ul li ul li {
+  width: 100%; /*defines the width of the second level ul looks like*/
+}
+
+p { /*define how the paragraph looks like*/
+  font-family:  "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+  color: gray;
+}
+
+h1, h2 { /*defines what the h1 and h2 heading looks like*/
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+
+}
+
+button { /*font stack to define the font appearence for button*/
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+}

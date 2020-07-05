@@ -1,0 +1,20 @@
+img.about {
+  position: relative; /* To make the position relative*/
+  height: 500px; /* Adjust height of the image*/
+  top: 136px; /* The next lines are define the position of the image*/
+  left: 50%;
+}
+
+p.about {
+  position: relative; /*This to make the positon for the paragraph relative*/
+  top: 100px; /* Used for positoning*/
+  font-size: 25px; /*defines the font size*/
+  margin-left: 20%; /* Last lines are used to define the positon*/
+  margin-right: 20%;
+  margin-bottom: -13%;
+}
+
+#endSection {
+  bottom: 60px; /* defines where the end second should be positoned on the footer*/
+  height: 90px;
+}

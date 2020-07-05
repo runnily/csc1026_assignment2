@@ -1,0 +1,54 @@
+img.quiz { /* This defines where the image stays on the quiz page*/
+  position: relative;
+  height: 500px; /* defines height*/
+  top: 136px;
+  left: 50%;
+}
+
+p.quiz { /*This defines where the image stays on where the paragraph stays within the div box, in the webpage*/
+  position: relative;
+  top: 100px;
+  font-size: 25px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: -13%;
+}
+
+form.quiz { /* This defines where the form quiz is positioned.*/
+  bottom: 50px;
+  position: relative;
+  top: 240px;
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+  font-size: 20px;
+  color: gray;
+}
+
+fieldset.quiz { /* This defines the border with of the field set*/
+  border-width: 1px;
+}
+
+legend.quiz { /*This defines how the caption (legend) for the form looks like*/
+  background-color: #FDEFE2; /*want the backgound color here*/
+  color: black; /* This deines the color*/
+  border-radius: 15px; /*This makes the border curved*/
+}
+
+#endSection { /* This is defines where the endSection (footer) for the webpage looks like*/
+  bottom: 60px;
+  height: 90px;
+}
+
+
+#select, #one, #two, #three, #four, #five { /* This defines where the button are positioned*/
+  padding: 10px; /*they are all positioned in the same way because I want them on top of each other*/
+  font-size: 16px; /*Each button corresponds to a different question on the form*/
+  position: absolute;
+  top: 180px;
+  left: 10px;
+}
+
+#one, #two, #three, #four, #five, #finish {
+  /*we want the buttons to be hidden first, and as the user moves on to different question the previous button is hidden and
+  next button is made visiable use java script*/
+  visibility: hidden;
+}

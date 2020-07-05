@@ -1,0 +1,160 @@
+#page { /*This div element hold the purpose of page*/
+  margin: auto; /*This allow it be in the middle of the page*/
+  width: 60px; /*set width to 60px*/
+}
+
+#board1 { /*This is a div tag called "board1" which defines the board which holds an image*/
+  width: 800px; /*adjust width to image could fit*/
+  height: 740px; /*adjust height to make image fit*/
+  background-size: 800px; /*define the background size*/
+  background-image: url("../img/board1.png"); /*defines the image*/
+  background-repeat: no-repeat; /*make image not repeat*/
+  position: absolute; /*Make position absolute*/
+  left: 36%; /*position purpose*/
+  top: 110px; /*position purposes*/
+}
+
+#board1img { /*defines the image which goes on board 1*/
+  width: 280px; /*set width*/
+  height: 150px; /*set height*/
+  position: absolute; /*makes position absolute*/
+  top: 19.3%; /*for positioning purposes*/
+  left: 16.5%;
+}
+
+#ChapterI { /*This div tag is positions are used for position the text, so the text could wrap around it*/
+  position: relative; /*makes the position relative*/
+  float: right; /*make it float right*/
+  width: 600px;
+  height: 740px;
+}
+
+#board2 { /*creates or boarder for an image*/
+  width: 800px; /*Set width*/
+  height: 760px; /*sets height*/
+  background-size: 800px; /*sets background size*/
+  background-image: url("../img/board2.png"); /*sets the image*/
+  background-repeat: no-repeat;/*make image non-repeat*/
+  position: absolute; /*set to absolute*/
+  right: 38%; /*positioning purposes*/
+  top: 1090px; /*positioning purposes*/
+}
+
+#board2img { /*defines where the image is placed on the border*/
+  width: 190px; /*sets width*/
+  height: 130px; /*sets height*/
+  position: absolute; /*makes absolute*/
+  top: 32%; /*position purposes*/
+  left: 35%; /*position purposes*/
+}
+
+#ChapterII { /*A div tag to define where chapter II is, this is also used to allow text to wrap around it*/
+  position: relative; /*set position to relative*/
+  float: left; /*float left*/
+  width: 600px; /*set width to 600*/
+  height: 740px; /*set height*/
+}
+
+#board3 { /*A boarder, where chapter III and chapter IV are placed*/
+  width: 95.5%; /*sets width of border*/
+  height: 690px; /*sets height of border*/
+  border-style: solid; /*makes the border solid*/
+  border-width: 20px; /*sets width of border*/
+  border-color: white;
+  border-radius: 100px; /*defines radius*/
+  background-color: #FEF6E1; /*changes the color*/
+  position: relative; /*makes it relative*/
+}
+
+#board3img { /*defines where the bord 3 would be placed*/
+  position: absolute; /*makes it absolute*/
+  right: -85%; /*position purposes*/
+  width: 450px; /*sets width*/
+  margin: 5%; /*position purposes*/
+}
+
+#laptop2 { /*defines where the laptop image would be position on boarder 3*/
+  position: relative; /*makes border relative*/
+  left: 10%; /*position purposes*/
+  margin: 5%; /*position purposes*/
+  top: 50px; /*position purposes*/
+  float: right; /*allow it to float right*/
+  width: 120px; /*sets width*/
+  height: 200px; /*sets height*/
+}
+
+#board4 { /*defines board 4 where the image are to be placed*/
+  width: 800px; /*sets width*/
+  height: 740px; /*sets height*/
+  background-size: 800px; /*defines background size*/
+  background-image: url("../img/board3.png"); /*sets image*/
+  background-repeat: no-repeat; /*makes in non-repeat*/
+  position: absolute; /*makes it absolute*/
+  left: 36%; /*position purposes*/
+  top: 2800px; /*position purposes*/
+}
+
+#board4img { /*defines where image should be in the board 4*/
+  width: 200px; /*sets width*/
+  height: 309px; /*sets height*/
+  position: absolute; /*makes it absolute */
+  top: 42.5%; /*position purposes*/
+  left: 37.5%; /*position purposes*/
+}
+
+#ChapterV { /*set positioning chapter V to allow text to wrap around */
+  position: relative; /*makes it relative*/
+  float: right; /*float right to allow text to wrap around*/
+  width: 600px; /*sets width*/
+  height: 740px; /*sets height*/
+}
+
+.break {
+  height: 1145px; /*to allow spacing at the end for end section to fit*/
+}
+
+#resultsBorder { /*this is used to display the search results*/
+  visibility: hidden; /*its first hidden- would become visible when user selects search button*/
+  position: absolute; /*makes it absolute*/
+  top: 264px; /*position purposes*/
+  left: 30%; /*position purposes*/
+  background-color: #FEF6E1; /*set background color*/
+  width: 600px; /*set width*/
+  height: 600px; /*set height*/
+  border-radius: 11px; /*make border curved*/
+  opacity: 0.8; /*set opacity*/
+
+}
+
+#cancel {
+  font-size: 16px; /*defines font size of the cancel button*/
+  margin: auto 5%; /*position purposes*/
+}
+
+#results a { /*defines how links should appear on the border*/
+  border: 1px solid #ddd; /*defines border and makes it a line*/
+  margin-top: -1px; /*position purposes*/
+  background-color: #FEF6E1; /*set color*/
+  padding: 12px; /*position purposes*/
+  text-decoration: none; /*provide no underline*/
+  font-size: 18px; /*defines font-size*/
+  display: block; /*allow links to display as a block*/
+}
+
+iframe{
+    border-width: 0px; /*To define border of iframe*/
+}
+table, th, td {
+  border: 1px solid pink; /*defines box border*/
+  color: grey; /*changes color*/
+  margin-left: 5%; /*position purposes*/
+  margin-right: 5%; /*position purposes*/
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif"; /*defines font and font stack*/
+}
+
+span {
+  display: block;
+  font-size: 12px;
+  white-space: pre-wrap;
+  color: pink;
+}
